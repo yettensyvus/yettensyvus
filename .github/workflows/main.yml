@@ -48,7 +48,7 @@ jobs:
           git commit -m 'temp commit' || echo
 
           git checkout output 2>/dev/null || git checkout --orphan output && git
-          rm -rf . && git checkout main -- generated/
+          rm -rf . && git checkout src -- generated/
 
           git commit -m 'Update generated files' || echo
 
