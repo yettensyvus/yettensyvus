@@ -1,16 +1,16 @@
 ## Hey 👋, I'm Alexandru Straton!
 
-I’m a IT student 💻. With a strong motivation to work in the technology and business industry. Seeking to gain insight and experience in software and web development, networking and professional growth. I consider myself a curious person in the world of technology and I’m always learning as much information as possible to increase my knowledge and technical skills in this field.
+I’m an IT student 💻 with a strong motivation to work in the technology and business industry. I’m seeking to gain insight and experience in software and web development, networking, and professional growth. I consider myself a curious person in the world of technology, always learning to increase my knowledge and technical skills in this field.
 <br/>
 
 <h2 align="left" id="yettensyvus">Spotify</h2>
 
-> The music I'm listening right now.
+> The music I'm listening to right now.
 
 <table>
   <tbody>
     <tr>
-      <td><a href="https://spotify-readme-yettensyvus.vercel.app/now-playing?open"><img src="https://spotify-readme-yettensyvus.vercel.app/now-playing" width="540" height="64"></a>
+      <td><a href="https://spotify-readme-yettensyvus.vercel.app/now-playing?open"><img src="https://spotify-readme-yettensyvus.vercel.app/now-playing" width="540" height="64"></a></td>
     </tr>
   </tbody>
 </table>
@@ -33,7 +33,6 @@ I’m a IT student 💻. With a strong motivation to work in the technology and 
   </tbody>
 </table>
 
-
 <h2 align="left" id="yettensyvus">Favorite Tech</h2>
 
 > Programming Languages.
@@ -42,87 +41,91 @@ I’m a IT student 💻. With a strong motivation to work in the technology and 
   <tr>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/sql.svg" width="48" height="48" alt="SQL" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/sql.svg" width="48" height="48" alt="SQL" />
       </a>
       <br>SQL
     </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/dot_net.svg" width="48" height="48" alt="C#" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/dot_net.svg" width="48" height="48" alt="C#" />
       </a>
       <br>C#
     </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/java.svg" width="48" height="48" alt="java" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/java.svg" width="48" height="48" alt="java" />
       </a>
       <br>JAVA
     </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/js.svg" width="48" height="48" alt="js" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/js.svg" width="48" height="48" alt="js" />
       </a>
       <br>JS
     </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/css.svg" width="48" height="48" alt="css" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/css.svg" width="48" height="48" alt="css" />
       </a>
       <br>CSS
     </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/html.svg" width="48" height="48" alt="html" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/html.svg" width="48" height="48" alt="html" />
       </a>
       <br>HTML
     </td>
-  </table>
+  </tr>
+</table>
 
-> IDE's, Tools and other things that I like to work with.
+> IDEs, Tools, and other things I like to work with.
 
 <table>
   <tr>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/vs_code.svg" width="48" height="48" alt="vs-code" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/vs_code.svg" width="48" height="48" alt="vs-code" />
       </a>
       <br>VS Code
     </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/vs_studio.svg" width="48" height="48" alt="vs-studio" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/vs_studio.svg" width="48" height="48" alt="vs-studio" />
       </a>
       <br>VS Studio
     </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/android_studio.svg" width="48" height="48" alt="android-studio" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/android_studio.svg" width="48" height="48" alt="android-studio" />
       </a>
       <br>Android
     </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/my_sql.svg" width="48" height="48" alt="mySQL-workbench" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/my_sql.svg" width="48" height="48" alt="mySQL-workbench" />
       </a>
       <br>MySQL
     </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/photoshop.svg" width="48" height="48" alt="photoshop" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/photoshop.svg" width="48" height="48" alt="photoshop" />
       </a>
       <br>Photoshop 
     </td>
-    </td>
     <td align="center" width="96">
       <a href="#yettensyvus">
-        <img src="/icons/debian.svg" width="48" height="48" alt="debian" />
+        <img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/icons/debian.svg" width="48" height="48" alt="debian" />
       </a>
       <br>Debian
+    </td>
+  </tr>
 </table>
 
 <h2 align="left" id="yettensyvus">My GitHub Stats</h2>
 
 > Stats.
 
-![](https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/generated/overview.svg)
-![](https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/generated/languages.svg)
+<img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/generated/overview.svg" alt="GitHub Stats Overview" />
+<img src="https://raw.githubusercontent.com/yettensyvus/yettensyvus/output/generated/languages.svg" alt="GitHub Languages" />
+
+---
