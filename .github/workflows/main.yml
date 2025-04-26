@@ -1,54 +1,55 @@
 name: Generate Stats Images
- 
- on:
-   push:
-     branches: [ main ]
-   schedule:
-     - cron: "0 0 * * *"
-   workflow_dispatch:
- 
- jobs:
-   build:
-     runs-on: ubuntu-latest
- 
-     steps:
-     - uses: actions/checkout@v4  # Updated from v2 to v4
- 
-     - name: Set up Python 3.8
-       uses: actions/setup-python@v4  # Updated from v2 to v4
-       with:
-         python-version: '3.8'
-         architecture: 'x64'
- 
-     - uses: actions/cache@v4  # Updated from v2 to v4
-       with:
-         path: ~/.cache/pip
-         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-         restore-keys: |
-           ${{ runner.os }}-pip-
- 
-     - name: Install requirements
-       run: |
-         python3 -m pip install --upgrade pip setuptools wheel
-         python3 -m pip install -r requirements.txt
- 
-     - name: Generate images
-       run: |
-         python3 --version
-         python3 generate_images.py
-       env:
-         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         EXCLUDED: ${{ secrets.EXCLUDED }}
-         EXCLUDED_LANGS: ${{ secrets.EXCLUDE_LANGS }}
-         COUNT_STATS_FROM_FORKS: ${{ secrets.COUNT_STATS_FROM_FORKS }}
- 
-     - name: Commit to the output branch of repo
-       run: |
-         git config --global user.name "github-stats[bot]"
-         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-         git add .
-         git commit -m 'temp commit' || echo
-         git checkout output 2>/dev/null || git checkout --orphan output && git rm -rf . && git checkout main -- generated/
-         git commit -m 'Update generated files' || echo
-         git push origin output -f
+'on':
+  push:
+    branches:
+      - src
+  schedule:
+    - cron: 0 0 * * *
+  workflow_dispatch: null
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+          architecture: x64
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: '${{ runner.os }}-pip-${{ hashFiles(''**/requirements.txt'') }}'
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Install requirements
+        run: |
+          python3 -m pip install --upgrade pip setuptools wheel
+          python3 -m pip install -r requirements.txt
+      - name: Generate images
+        run: |
+          python3 --version
+          python3 generate_images.py
+        env:
+          ACCESS_TOKEN: '${{ secrets.ACCESS_TOKEN }}'
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          EXCLUDED: '${{ secrets.EXCLUDED }}'
+          EXCLUDED_LANGS: '${{ secrets.EXCLUDE_LANGS }}'
+          COUNT_STATS_FROM_FORKS: '${{ secrets.COUNT_STATS_FROM_FORKS }}'
+      - name: Commit to the output branch of repo
+        run: >
+          git config --global user.name "github-stats[bot]"
+
+          git config --global user.email
+          "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          git commit -m 'temp commit' || echo
+
+          git checkout output 2>/dev/null || git checkout --orphan output && git
+          rm -rf . && git checkout main -- generated/
+
+          git commit -m 'Update generated files' || echo
+
+          git push origin output -f
